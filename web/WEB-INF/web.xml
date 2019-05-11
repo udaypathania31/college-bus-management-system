@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Scheduleservlet</servlet-name>
+        <servlet-class>Controller.Scheduleservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>Controller.delete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogServlet</servlet-name>
+        <servlet-class>Controller.LogServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Scheduleservlet</servlet-name>
+        <url-pattern>/Scheduleservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogServlet</servlet-name>
+        <url-pattern>/LogServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
